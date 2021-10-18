@@ -1,6 +1,7 @@
 package com.shiyue.springboot.controller;
 
 
+import com.alibaba.fastjson.JSONObject;
 import com.shiyue.springboot.domain.User;
 import com.shiyue.springboot.repository.EazyUiMapper;
 
@@ -8,8 +9,6 @@ import com.shiyue.springboot.service.EazyUiservice;
 import com.shiyue.springboot.service.LoginService;
 
 import com.shiyue.springboot.service.UserService;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -59,7 +58,7 @@ public class EazyUiController {
 
     @RequestMapping("/showAllData")
     @ResponseBody
-    public JSONArray allUser() {
+    public JSONObject allUser() {
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
         List<User> allUserlist = eazyUiMapper.findAll();
         User user = new User();
@@ -72,7 +71,7 @@ public class EazyUiController {
             String newBirthday = simpleDateFormat.format(birDate);
             allUserlist.get(i).setFormatDate(newBirthday);
         }
-        JSONArray jsonArray = JSONArray.fromObject(allUserlist);
+        JSONObject jsonArray = new JSONObject();
         return jsonArray;
     }
 

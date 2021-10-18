@@ -1,6 +1,6 @@
 package com.shiyue.springboot.controller;
 
-import net.sf.json.JSONObject;
+import com.alibaba.fastjson.JSONObject;
 import org.springframework.stereotype.Controller;
 
 @Controller

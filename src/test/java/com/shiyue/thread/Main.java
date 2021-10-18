@@ -1355,7 +1355,13 @@ public class Main {
         System.out.println(a);
     }
 
+
+    @Test
+    public void skp2(){
+        System.out.printf("33333");
     }
+
+}
 
 
 

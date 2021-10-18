@@ -1,13 +1,13 @@
 package com.shiyue.springboot.controller;
 
 
+import com.alibaba.fastjson.JSONObject;
 import com.shiyue.springboot.service.UserService;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-import net.sf.json.util.CycleDetectionStrategy;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.configurationprocessor.json.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -88,7 +88,7 @@ public class AjaxController {
         map2.put("code","2");
         map2.put("name","bbb");
         str.add(map2);
-        String fromObject = JSONArray.fromObject(str).toString();
+        String fromObject = "";
         logger.info(fromObject);
         System.out.println(fromObject);
         renderString(response, fromObject, "text/json");
@@ -128,7 +128,7 @@ public class AjaxController {
             map2.put("name","bbb===");
             str.add(map2);
         }
-        String fromObject = JSONArray.fromObject(str).toString();
+        String fromObject = "";
         logger.info(fromObject);
         System.out.println(fromObject);
         renderString(response, fromObject, "text/json");

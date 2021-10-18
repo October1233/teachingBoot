@@ -1,7 +1,7 @@
 package com.shiyue.springboot.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.shiyue.springboot.service.LoginService ;
-import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

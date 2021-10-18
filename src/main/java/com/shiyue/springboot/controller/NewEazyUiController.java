@@ -1,16 +1,16 @@
 package com.shiyue.springboot.controller;
 
 
+import com.alibaba.fastjson.JSONObject;
 import com.shiyue.springboot.domain.User;
 import com.shiyue.springboot.repository.EazyUiMapper;
 import com.shiyue.springboot.service.EazyUiservice;
 import com.shiyue.springboot.service.LoginService;
 import com.shiyue.springboot.service.UserService;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.configurationprocessor.json.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -56,7 +56,7 @@ public class NewEazyUiController {
             allUserlist.get(i).setFormatDate(simpleDateFormat.format
                     (allUserlist.get(i).getBirthday()));
         }
-        JSONArray jsonArray = JSONArray.fromObject(ace);
+        JSONArray jsonArray = new JSONArray();
         return jsonArray;
     }
 
@@ -176,7 +176,7 @@ public class NewEazyUiController {
         User user = eazyUiservice.findUserDataToId(returnID);
         if (user!=null) {
             user.setFormatDate(simpleDateFormat.format(user.getBirthday()));
-            JSONObject jsonObject = JSONObject.fromObject(user);
+            JSONObject jsonObject = new JSONObject();
             logger.info("数据链   " + jsonObject);
             return jsonObject;
         }else {
@@ -197,7 +197,7 @@ public class NewEazyUiController {
         List<User> addr = list.stream().sorted
                 (Comparator.comparing(User::getAddress)).distinct().collect(Collectors.toList());
         addr.stream().forEach(user -> System.out.println("排序后+"+user.getAddress()));
-        String jsonObject = JSONArray.fromObject(addr).toString();
+        String jsonObject = "";
         return jsonObject;
     }
 }

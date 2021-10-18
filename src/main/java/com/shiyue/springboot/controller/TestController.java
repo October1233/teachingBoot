@@ -1,6 +1,7 @@
 package com.shiyue.springboot.controller;
 
 
+import com.alibaba.fastjson.JSONObject;
 import com.shiyue.springboot.domain.User;
 import com.shiyue.springboot.domain.UserStady;
 import com.shiyue.springboot.repository.EazyUiMapper;
@@ -9,14 +10,11 @@ import com.shiyue.springboot.repository.TestMapper;
 import com.shiyue.springboot.service.TestService;
 import com.shiyue.springboot.service.TestServiceImpl;
 import com.shiyue.springboot.service.UserService;
-import javafx.concurrent.Worker;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.boot.configurationprocessor.json.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -115,10 +113,6 @@ public class TestController {
     @ResponseBody
     public void testArray(){
         JSONArray jsonArray = new JSONArray();
-        jsonArray.add("1");
-        jsonArray.add("清华");
-        jsonArray.add("zhaoying");
-        jsonArray.add(40);
         logger.info("jsonArray=="+jsonArray);
         List list = new ArrayList();
         list.add("1");
@@ -175,10 +169,6 @@ public class TestController {
     public void testArrayAndJson(){
         Map map = new HashMap();
         JSONArray jsonArray = new JSONArray();
-        jsonArray.add("1");
-        jsonArray.add("清华");
-        jsonArray.add("zhaoying");
-        jsonArray.add(40);
         List list = new ArrayList();
         list.add("1");
         list.add("清华");
@@ -233,7 +223,6 @@ public class TestController {
            questionList.add(questionMap);
         }
         map.put("cd",questionList);
-        logger.info("信息"+JSONObject.fromObject(map));
         String a="123";
         Integer formatType = Integer.parseInt(a);
         logger.info(formatType+"");

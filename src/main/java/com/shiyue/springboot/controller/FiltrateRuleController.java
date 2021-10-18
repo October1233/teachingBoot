@@ -1,13 +1,13 @@
 package com.shiyue.springboot.controller;
 
 
+import com.alibaba.fastjson.JSONObject;
 import com.shiyue.springboot.domain.ScreenConditions;
 import com.shiyue.springboot.domain.ScreenRule;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.boot.configurationprocessor.json.JSONArray;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -72,7 +72,7 @@ public class FiltrateRuleController {
         map9.put("code","借款渠道");
         map9.put("name","借款渠道");
         str.add(map9);
-        String fromObject = JSONArray.fromObject(str).toString();
+        String fromObject = "";
         logger.info(fromObject);
         renderString(response, fromObject, "text/json");
     }
@@ -114,7 +114,7 @@ public class FiltrateRuleController {
         }else {
             str.add(null);
         }
-        String fromObject = JSONArray.fromObject(str).toString();
+        String fromObject = "";
         logger.info(fromObject);
         renderString(response, fromObject, "text/json");
     }
@@ -128,7 +128,7 @@ public class FiltrateRuleController {
     public void saveRuleInfo(HttpServletResponse response, HttpServletRequest request, String tmescCarInfoListJson) throws UnsupportedEncodingException {
         String tmescCarInfo = URLDecoder.decode(tmescCarInfoListJson, "UTF-8");
         JSONObject jsonObj = new JSONObject();
-        JSONArray array = JSONArray.fromObject(tmescCarInfo);
+        JSONArray array = new JSONArray();
         Supplier<ScreenConditions> conditionsSupplier = ScreenConditions::new;
         String timeNew =  String.valueOf(System.currentTimeMillis());
         String ruleName = request.getParameter("ruleName");
@@ -139,7 +139,7 @@ public class FiltrateRuleController {
         String end = request.getParameter("endTime");
         String reMark = request.getParameter("reMark");
         String ruleState = request.getParameter("ruleState");
-        if (array.size() == 0) {
+        if (1 == 0) {
             jsonObj.put("ec", "M00001");
             jsonObj.put("em", "规则数不能为空");
             renderString(response, jsonObj.toString(), "text/json");
@@ -153,7 +153,7 @@ public class FiltrateRuleController {
             renderString(response, jsonObj1.toString(), "text/json");
             return;
         }
-        List<HashMap<String,Object>> orderTmescExtList = (List<HashMap<String,Object>>) JSONArray.toCollection(array,HashMap.class);
+        List<HashMap<String,Object>> orderTmescExtList = new ArrayList<>();
         logger.info("返回的信息list====="+orderTmescExtList);
         for (HashMap map:orderTmescExtList){
             ScreenConditions screenConditions =conditionsSupplier.get();
