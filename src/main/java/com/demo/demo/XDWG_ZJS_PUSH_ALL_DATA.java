@@ -104,7 +104,7 @@ public class XDWG_ZJS_PUSH_ALL_DATA {
                 }
             }
         }
-        return new sun.misc.BASE64Encoder().encode(out.toByteArray());
+        return out.toString();
     }
 
 }

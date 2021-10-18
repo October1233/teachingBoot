@@ -4,7 +4,7 @@ package com.shiyue.springboot.controller;
 import com.alibaba.fastjson.JSONObject;
 import com.shiyue.springboot.domain.ScreenConditions;
 import com.shiyue.springboot.domain.ScreenRule;
-import org.apache.commons.lang.StringUtils;
+//import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.configurationprocessor.json.JSONArray;
@@ -175,7 +175,7 @@ public class FiltrateRuleController {
         screenRule.setRuleCode(ruleCode);
         screenRule.setRemark(reMark);
         screenRule.setStatus(ruleState);
-        String product = StringUtils.join(loanProduct, ",");
+        String product = "";
 //        screenRule.setBusinessType(product);
         logger.info("---"+product);
 

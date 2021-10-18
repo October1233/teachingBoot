@@ -6,7 +6,7 @@ import com.shiyue.springboot.repository.EazyUiMapper;
 import com.shiyue.springboot.service.EazyUiservice;
 import com.shiyue.springboot.service.TestService;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang.StringUtils;
+//import org.apache.commons.lang.StringUtils;
 import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -77,7 +77,7 @@ public class TimedTask {
         System.out.println("对象1"+users1);
         System.out.println("对象2"+users2);
         System.out.println(userOpt1.orElse(users));
-        System.out.println(StringUtils.isBlank(a));
+//        System.out.println(StringUtils.isBlank(a));
 
 
 
