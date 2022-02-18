@@ -10,6 +10,7 @@ import com.demo.util.Base64;
 import com.demo.util.HttpClientUtil;
 import com.demo.util.MD5;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
 
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -63,6 +64,14 @@ public class XDWG_ZJS_QUERY_WAREHOUSING_STATUS{
             e.printStackTrace();
         }
 
+
     }
 
+
+    @Test
+    public void stgawrta(){
+        String token = "DoubleEnter_O1469202201111034013237";
+        String key = token.substring(0, token.indexOf("O"));
+        System.out.println(key);
+    }
 }

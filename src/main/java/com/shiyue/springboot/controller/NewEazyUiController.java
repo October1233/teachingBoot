@@ -59,6 +59,12 @@ public class NewEazyUiController {
         JSONArray jsonArray = new JSONArray();
         return jsonArray;
     }
+    @RequestMapping("/showAllDatasss")
+    @ResponseBody
+    public String allUserss() {
+        JSONArray jsonArray = new JSONArray();
+        return "jsonArray";
+    }
 
 
     /**

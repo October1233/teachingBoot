@@ -4,6 +4,9 @@ import com.shiyue.springboot.domain.School;
 import com.shiyue.springboot.domain.User;
 import org.apache.ibatis.annotations.*;
 
+import java.io.File;
+import java.sql.Blob;
+import java.sql.ResultSet;
 import java.util.Date;
 import java.util.List;
 
@@ -54,4 +57,7 @@ public interface EazyUiMapper {
 
     @SelectProvider(type = EasyUiMapperProvider.class,method = "findUserByInfo")
     public List<User> findUserByInfo(@Param("id") int id,@Param("name") String name);
+
+    @Select("select thumbnail from act_de_model where id = '3cc2a515-66dc-11ec-ad2c-00ff17db83a2'")
+    public ResultSet allAdd();
 }

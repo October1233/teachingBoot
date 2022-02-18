@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 import java.util.Date;
-
+import java.util.List;
 
 
 @Data
@@ -27,6 +27,9 @@ public class User {
     private String surepassword;
     private String formatDate;
     private BigDecimal amount;
+    private List<School> schools;
+    private ScreenConditions screenConditions;
+    
 
 
 

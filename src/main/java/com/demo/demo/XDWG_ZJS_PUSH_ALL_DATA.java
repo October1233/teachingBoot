@@ -9,10 +9,13 @@ import com.demo.util.Base64;
 import com.demo.util.HttpClientUtil;
 import com.demo.util.MD5;
 import lombok.extern.slf4j.Slf4j;
+import org.junit.jupiter.api.Test;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.zip.GZIPOutputStream;
 
@@ -107,4 +110,13 @@ public class XDWG_ZJS_PUSH_ALL_DATA {
         return out.toString();
     }
 
+    @Test
+    public void bytes(){
+        DateTimeFormatter dtf3 = DateTimeFormatter.ofPattern("yyyy");
+        LocalDate localDate = LocalDate.now();
+//        resultList.subList(pageParam.getPageSize() * (pageParam.getPageNum() - 1), ((pageParam.getPageSize() * pageParam.getPageNum()) > Integer.valueOf(resultList.size()) ? Integer.valueOf(resultList.size()) : (pageParam.getPageSize() * pageParam.getPageNum())));
+        System.out.println(localDate.format(dtf3));
+        Byte aByte = new Byte("1");
+        System.out.println(aByte.equals(new Byte("1")));
+    }
 }

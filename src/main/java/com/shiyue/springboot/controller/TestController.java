@@ -545,6 +545,13 @@ public class TestController {
         }
         return jsonObject;
     }
+
+
+    @Test
+    public void sSwW(){
+        BigDecimal bigDecimal = new BigDecimal(10);
+        System.out.println(bigDecimal.divide(new BigDecimal(0)));
+    }
 }
 
 

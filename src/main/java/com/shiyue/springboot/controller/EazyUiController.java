@@ -9,14 +9,24 @@ import com.shiyue.springboot.service.EazyUiservice;
 import com.shiyue.springboot.service.LoginService;
 
 import com.shiyue.springboot.service.UserService;
+import org.apache.commons.io.IOUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.OutputStream;
+import java.lang.reflect.Method;
+import java.sql.Blob;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
@@ -241,4 +251,53 @@ public class EazyUiController {
         jsonObject.put("rtaddr",a);
         return jsonObject;
     }
+
+
+    @GetMapping("/getDe1")
+    public String getNuChem1(HttpServletResponse response) throws Exception{
+        Blob file = eazyUiMapper.allAdd().getBlob(0);
+        try {
+            //获取输入流
+            FileInputStream fis = new FileInputStream("");
+
+            //新的 byte 数组输出流，缓冲区容量1024byte
+            ByteArrayOutputStream bos = new ByteArrayOutputStream(1024);
+            //缓存
+            byte[] b = new byte[1024];
+            int n;
+            while ((n = fis.read(b)) != -1) {
+                bos.write(b, 0, n);
+            }
+            fis.close();
+            //改变为byte[]
+            byte[] data = bos.toByteArray();
+            //
+            response.setHeader("content-disposition", "attachment;filename="+1111);
+            response.setHeader("content-type", "image/png");//文件类型
+            //6、输出
+            OutputStream os=response.getOutputStream();
+            os.write(IOUtils.toByteArray(file.getBinaryStream()));
+            bos.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+        return "1";
+    }
+
+
+    private Object getFieldValueByName(String fieldName, Object o) {
+        try {
+            String firstLetter = fieldName.substring(0, 1).toUpperCase();
+            String getter = "get" + firstLetter + fieldName.substring(1);
+            Method method = o.getClass().getMethod(getter, new Class[] {});
+            Object value = method.invoke(o, new Object[] {});
+            return value;
+        } catch (Exception e) {
+            return null;
+        }
+    }
+
+
 }

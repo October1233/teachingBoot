@@ -7,6 +7,8 @@ import org.junit.Test;
 import java.math.BigDecimal;
 import java.text.SimpleDateFormat;
 import java.util.*;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
@@ -91,7 +93,22 @@ public class LambdaUtil {
     }
 
 
-
+    /**
+     * 消费者通过consumer
+     * @param consumer
+     * @param <T>
+     * @return
+     */
+    public static <T> Consumer<T> consumerWithIndex(BiConsumer<T, Integer> consumer) {
+        class Obj {
+            int i;
+        }
+        Obj obj = new Obj();
+        return t -> {
+            int index = obj.i++;
+            consumer.accept(t, index);
+        };
+    }
 
 
 

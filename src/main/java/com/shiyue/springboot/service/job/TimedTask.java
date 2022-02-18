@@ -1,5 +1,6 @@
 package com.shiyue.springboot.service.job;
 
+import com.demo.util.otherUtil;
 import com.shiyue.springboot.domain.School;
 import com.shiyue.springboot.domain.User;
 import com.shiyue.springboot.repository.EazyUiMapper;
@@ -37,7 +38,10 @@ public class TimedTask {
 
     @Scheduled(cron = "0 0/2 * * * ?")
     public void sssssk(){
-        testService.sdasd();
+        System.out.println("测试");
+        User user = new User();
+        otherUtil otherUtil = new otherUtil();
+        otherUtil.validate(user);
     }
     @Scheduled(cron = "0 1/2 * * * ?")
     public void sssss2(){

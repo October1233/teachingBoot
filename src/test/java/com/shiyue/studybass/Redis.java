@@ -78,6 +78,9 @@ public class Redis {
             if (jedis != null)
                 jedis.disconnect();
         }
+        new Thread(){
+            
+        }
     }
     private static final ThreadLocal<ShardedJedis> jdeisContextHolder = new ThreadLocal<ShardedJedis>();
 

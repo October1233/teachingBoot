@@ -41,7 +41,7 @@ public interface TestMapper {
     @Update("update user set sex =#{sex} where id = #{id}")
     public Integer updateaSex(String sex,String id);
 
-    @Select("select parent_id,id from area_localhost")
+//    @Select("select parent_id,id from area_localhost")
     public List<Map<String,Object>> selectaddCode();
 
 
