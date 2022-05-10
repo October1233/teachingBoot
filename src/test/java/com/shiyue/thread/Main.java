@@ -5,7 +5,7 @@ import com.alibaba.fastjson.JSONArray;
 import com.shiyue.springboot.domain.CertificatePrivacy;
 import com.shiyue.springboot.domain.School;
 import com.shiyue.springboot.domain.User;
-import lombok.extern.log4j.Log4j;
+import jdk.nashorn.internal.runtime.logging.Logger;
 import org.apache.commons.collections.map.LinkedMap;
 import org.apache.commons.net.ftp.FTPFile;
 import org.apache.poi.hssf.usermodel.HSSFDateUtil;
@@ -13,7 +13,7 @@ import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;
 import org.springframework.cglib.beans.BeanMap;
@@ -40,7 +40,7 @@ import java.util.function.Supplier;
 import java.util.stream.Collectors;
 
 
-@Log4j
+@Logger
 public class Main {
 //    public static void main(String[] args) throws InterruptedException, ExecutionException {
 //        ExecutorService executor = Executors.newFixedThreadPool(2);
@@ -95,7 +95,7 @@ public class Main {
         try {
             xuexi(list);
         }catch (Exception e){
-            log.error("外层捕获",e);
+//            log.error("外层捕获",e);
         }
 //        System.out.println(list1);
     }
@@ -1345,7 +1345,7 @@ public class Main {
             String[] firstLine = line.split("\\|"); // 读第一行
             System.out.println(firstLine);
         }catch(Exception e){
-                log.error(e);
+            System.out.println();
             }
 
 
@@ -1462,7 +1462,95 @@ public class Main {
 
     
     
+    @Test   
+    public void characterReplacement() {
+        int k = 3;
+        String s = "ACJIDNJSKSF";
+        int[] num = new int[26];
+        int n = s.length();
+        int maxn = 0;
+        int left = 0, right = 0;
+        while (right < n) {
+            num[s.charAt(right) - 'A']++;
+            maxn = Math.max(maxn, num[s.charAt(right) - 'A']);
+            if (right - left + 1 - maxn > k) {
+                num[s.charAt(left) - 'A']--;
+                left++;
+            }
+            right++;
+        }
+        System.out.println( right - left);
+    }
 
+    @Test
+    public void num222() {
+        System.out.println(numWays(4));
+    }
+
+    //使用哈希map，充当备忘录的作用
+    Map<Integer, Integer> tempMap = new HashMap();
+
+    public int numWays(int n) {
+    // n = 0 也算1种
+        if (n == 0) {
+            return 1;
+        }
+        if (n <= 2) {
+            return n;
+        }
+    //先判断有没计算过，即看看备忘录有没有a
+        if (tempMap.containsKey(n)) {
+    //备忘录有，即计算过，直接返回
+            return tempMap.get(n);
+        } else {
+    // 备忘录没有，即没有计算过，执行递归计算,并且把结果保存到备忘录map中，对1000000007取余（这个是leetcode题目规定的）
+            tempMap.put(n, (numWays(n - 1) + numWays(n - 2)) % 1000000007);
+            return tempMap.get(n);
+        }
+    }
+    
+    @Test
+    public void twoS(){
+        int[] nums = {2,7,11,15};
+        int target = 9;
+        System.out.println(Arrays.toString(twoSum(nums, 9)));
+    }
+    
+    
+    private int[] twoSum(int[] nums,int target){
+        Map<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int temp = target - nums[i];
+            if (map.containsKey(temp)) {
+                return new int[] { map.get(temp), i };
+            }
+            map.put(nums[i], i);
+        }
+        throw new IllegalArgumentException("发生错误");
+    }
+    
+    @Test
+    public void testStart11(){
+        String s = "abcabcbb";
+        System.out.println(str11(s));
+    }
+    
+    private int str11(String s){
+        int length = s.length();
+        int max = 0;
+        Map<Character, Integer> map = new HashMap<>();
+        for(int start = 0, end = 0; end < length; end++){
+            char element = s.charAt(end);
+            if(map.containsKey(element)){
+                start = Math.max(map.get(element  ) + 1, start); //map.get()的地方进行+1操作
+            }
+            max = Math.max(max, end - start + 1);
+            map.put(element, end);
+        }
+        return max;
+    }
+    
+    
     
 }
 

@@ -8,7 +8,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
@@ -25,19 +25,19 @@ public class XDWG_ZJS_QUERY_WAREHOUSING_STATUS_ReqBody implements Serializable {
     private static final long serialVersionUID = -1366722770354513468L;
 
     /**出库时间**/
-    @NotEmpty(message = "出库时间不能为空")
+    @NotNull(message = "出库时间不能为空")
     private String operationTime;
 
     /**客户编号**/
-    @NotEmpty(message = "客户编号不能为空")
+    @NotNull(message = "客户编号不能为空")
     private String storeID;
 
     /**交易类型IN入库OUT出库**/
-    @NotEmpty(message = "交易类型不能为空")
+    @NotNull(message = "交易类型不能为空")
     private String transType;
 
     /**出入库单号**/
-    @NotEmpty(message = "出入库单号不能为空")
+    @NotNull(message = "出入库单号不能为空")
     private String orderNo;
 
 }

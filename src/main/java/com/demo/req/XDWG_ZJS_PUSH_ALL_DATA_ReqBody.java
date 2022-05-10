@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
@@ -32,7 +32,7 @@ public class XDWG_ZJS_PUSH_ALL_DATA_ReqBody implements Serializable {
      本字段域的内容为：出入库记录（UTF-8编码）压缩后的Base64编码。
      压缩算法：gzip
      **/
-    @NotBlank(message = "数据内容不能为空")
+    @NotNull(message = "数据内容不能为空")
     private String text;
 
 }

@@ -234,14 +234,14 @@ public class EazyUiController {
     private void putin(){
         System.out.println("输出");
     }
-    public void adcf(){
-        List<User> users = eazyUiMapper.findAll();
-        users.stream();
-        eazyUiservice.insertInfo();
-        EazyUiservice.insertInto();
-        users.forEach(user -> user.getAddress());
-
-    }
+//    public void adcf(){
+//        List<User> users = eazyUiMapper.findAll();
+//        users.stream();
+//        eazyUiservice.insertInfo();
+//        EazyUiservice.insertInto();
+//        users.forEach(user -> user.getAddress());
+//
+//    }
     @RequestMapping("/cctest")
     @ResponseBody
     public JSONObject selectInfo(HttpServletRequest request){

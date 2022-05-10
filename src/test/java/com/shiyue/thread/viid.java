@@ -15,16 +15,19 @@ public class viid {
         Field field = null;
         Field field1 = null;
         Class<?> clazz = user.getClass();
-
-        for (; clazz != Object.class; clazz = clazz.getSuperclass()) {
-            try {
-                field = clazz.getDeclaredField("screenConditions");
-                field1 = field.getClass().getDeclaredField("conditionsName");
-            } catch (Exception e) {
-
-
-            }
+        Field[] fields = clazz.getFields();
+        for (Field field2:fields){
+            System.out.println(field2.getName());
         }
+//        for (; clazz != Object.class; clazz = clazz.getSuperclass()) {
+//            try {
+//                field = clazz.getDeclaredField("screenConditions");
+//                field1 = field.getClass().getDeclaredField("conditionsName");
+//            } catch (Exception e) {
+//
+//
+//            }
+//        }
         System.out.println(field);
         System.out.println(field1);
     }

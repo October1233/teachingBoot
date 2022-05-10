@@ -8,7 +8,8 @@ import lombok.Setter;
 
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Min;
-import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
 
 import java.io.Serializable;
 
@@ -21,14 +22,14 @@ public class XDWG_ZJS_RECORD implements Serializable {
     private static final long serialVersionUID = -1366722770354513468L;
 
     /**出库产品SKU**/
-    @NotBlank(message = "出库单号不能为空")
+    @NotNull(message = "出库单号不能为空")
     private String productSKU;
 
     /**出库产品SKU描述(型号)**/
     private String productSKUDes;
 
     /**出库产品种类**/
-    @NotBlank(message = "出库产品种类不能为空")
+    @NotNull(message = "出库产品种类不能为空")
     private String productType;
 
     /**出库产品数量**/
