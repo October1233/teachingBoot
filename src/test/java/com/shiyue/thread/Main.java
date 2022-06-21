@@ -30,6 +30,7 @@ import java.nio.charset.StandardCharsets;
 import java.text.DecimalFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.time.LocalDateTime;
 import java.util.*;
 import java.util.List;
 import java.util.concurrent.*;
@@ -1550,6 +1551,35 @@ public class Main {
         return max;
     }
     
+    
+    
+    @Test
+    public void testPre(){
+        User user = new User();
+        user.setUsername("shiyue");
+        System.out.println(user.toString());
+        User user1 = user;
+        user1.setAge(11);
+        System.out.println(user.toString());
+    }
+
+    synchronized public String test(){
+        return String.valueOf(System.currentTimeMillis());
+    }
+    
+    
+    @Test
+    public void testuuid() throws InterruptedException {
+        for (int i = 0;i<5;i++){
+            Thread.sleep(1);
+            System.out.println(System.currentTimeMillis());
+        }
+    }
+    
+    public void ins(int a){
+        String[] numString = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        
+    }
     
     
 }

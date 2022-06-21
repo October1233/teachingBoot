@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.huatonghh.phoenix.product.mapper.claim.PxClaimtypeMapper">
+
+    <update id="updateState" parameterType="string">
+        update px_claimType set enable = ${enable} where id = ${id}
+    </update>
+
+    <select id="getMapByIds" resultType="hashmap">
+        select id,code,label
+            from px_credentialType where id in (${ids});
+    </select>
+
+    <resultMap id="BaseResultMap" type="com.huatonghh.phoenix.product.export.dto.claim.PxDutyClaimDTO" >
+        <id column="cvid" 		 property="cvid"      jdbcType="VARCHAR" />
+        <result column="coverageId" property="coverageId" jdbcType="VARCHAR" />
+        <result column="claimId"    property="claimId"    jdbcType="VARCHAR" />
+        <result column="label"    property="label"    jdbcType="VARCHAR" />
+        <result column="code"    property="code"    jdbcType="VARCHAR" />
+        <result column="calculateFormula"    property="calculateFormula"    jdbcType="VARCHAR" />
+        <result column="claimParentType"    property="claimParentType"    jdbcType="VARCHAR" />
+        <collection property="credentialtypes" javaType="java.util.ArrayList" 
+                    ofType="com.huatonghh.phoenix.product.entity.claim.PxCredentialtype"
+                    select="com.huatonghh.phoenix.product.mapper.claim.PxCredentialtypeMapper.getPxCredentialtypeByRelation" 
+                    column="{id=cvid}" />
+    </resultMap>
+
+    <!-- 查询列表 -->
+    <select id="getCoverageClaimList" resultMap="BaseResultMap">
+        SELECT
+        pccr.id cvid,
+        pccr.claim_id claimId,
+        pccr.calculate_formula calculateFormula,
+        pccr.coverage_id coverageId,
+        pct1.label,
+        pct1.code,
+        pct2.label claimParentType
+        from px_coverage_claim_relation pccr
+        left join px_claimtype pct1 on pccr.claim_id = pct1.id
+        left join px_claimtype pct2 on pct1.parent_id = pct2.id
+        <where>
+            pccr.coverage_id = #{id}
+        </where>
+    </select>
+    
+
+</mapper>

@@ -13,6 +13,25 @@ class Node {
         next = nextNode;
     }
 
+    public static Node removeNode(Node node,int target){
+        Node fast = node ,slow = node;
+        if (node == null || node.next == null){
+            return null;
+        }
+        for (int l = 0; l<target;l++){
+            fast = fast.next;
+        }
+
+        while (fast.next!= null){
+            fast = fast.next;
+            slow = slow.next;
+        }
+        
+        slow.next = slow.next.next;
+        
+        return node;
+    }
+    
     public static Node cycleNode(Node head) {
 
         Node prev = null; // 保存前一个结点的信息
@@ -38,10 +57,12 @@ class Node {
         return head;
     }
 
+    
 
     public static void main(String[] args) {
         // 构造测试用例，链表指向为 N1 -> N2 -> N3 -> N4
-        Node n4 = new Node(4, null);
+        Node n5 = new Node(5, null);
+        Node n4 = new Node(4, n5);
         Node n3 = new Node(3, n4);
         Node n2 = new Node(2, n3);
         Node n1 = new Node(1, n2);
@@ -50,9 +71,16 @@ class Node {
         System.out.println("原始链表指向为：");
         printNode(head);
 
+        System.out.println("原始链表指向为：");
+        head = removeNode(head,4 );
+        printNode(head);
+        
         // 普通方式反转链表
         System.out.println("循环方式反转链表指向为：");
         head = cycleNode(head);
+        
+        
+        
         printNode(head);
     }
 

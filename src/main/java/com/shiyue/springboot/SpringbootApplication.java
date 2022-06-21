@@ -13,6 +13,9 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.concurrent.Executor;
+import java.util.concurrent.ThreadPoolExecutor;
+
 
 @SpringBootApplication
 @MapperScan(basePackages = "com.shiyue.springboot.repository")
@@ -43,5 +46,6 @@ public class SpringbootApplication {
         return factory;
     }
 
+    
 
 }
