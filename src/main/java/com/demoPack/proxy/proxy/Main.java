@@ -1,6 +1,5 @@
 package com.demoPack.proxy.proxy;
 
-import sun.misc.ProxyGenerator;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -44,23 +43,23 @@ public class Main {
     }
 
 
-    private static void createProxyClassFile() {
-        String name = "StudentProxy";
-        byte[] data = ProxyGenerator.generateProxyClass(name, new Class[]{Study.class});
-        FileOutputStream out = null;
-        try {
-            out = new FileOutputStream(name + ".class");
-            out.write(data);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (null != out) try {
-                out.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-    }
+//    private static void createProxyClassFile() {
+//        String name = "StudentProxy";
+//        byte[] data = ProxyGenerator.generateProxyClass(name, new Class[]{Study.class});
+//        FileOutputStream out = null;
+//        try {
+//            out = new FileOutputStream(name + ".class");
+//            out.write(data);
+//        } catch (FileNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        } finally {
+//            if (null != out) try {
+//                out.close();
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//    }
 }
