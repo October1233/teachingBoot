@@ -1,6 +1,8 @@
 package com.demoPack.proxy.proxy;
 
 
+import org.junit.Test;
+
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -62,4 +64,17 @@ public class Main {
 //            }
 //        }
 //    }
+
+    private final static String REGEX_POSITIVEINTEGER= "^\\+?[1-9][0-9]*$";
+
+
+    @Test
+    public void swtest(){
+        System.out.println("".matches(REGEX_POSITIVEINTEGER));
+    }
+
+
+
+
+
 }

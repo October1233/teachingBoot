@@ -38,19 +38,20 @@ public class TimedTask {
 
     @Scheduled(cron = "0 0/2 * * * ?")
     public void sssssk(){
-        System.out.println("测试");
-        User user = new User();
-        otherUtil otherUtil = new otherUtil();
-        otherUtil.validate(user);
+//        System.out.println("测试");
+//        User user = new User();
+//        otherUtil otherUtil = new otherUtil();
+//        otherUtil.validate(user);
+
     }
-    @Scheduled(cron = "0 1/2 * * * ?")
+//    @Scheduled(cron = "0 1/2 * * * ?")
     public void sssss2(){
         testService.shsdaaa();
     }
 
 
 
-    @Scheduled(cron = "0 0/30 * * * ?")
+//    @Scheduled(cron = "0 0/30 * * * ?")
     public void aotuputjob(){
         String ccc = "0.000270000";
         map.put("ccc1",ccc);
@@ -99,7 +100,7 @@ public class TimedTask {
         System.out.println(eazyUiservice.insertInfoImp());
     }
 
-    @Scheduled(cron = "0 0/10 * * * ?")
+//    @Scheduled(cron = "0 0/10 * * * ?")
     public void sssss(){
         List<String> list = new ArrayList<>();
         list.add("credit_report_9064_20200617.001.xlsx.result.20200617193558856.txt");
