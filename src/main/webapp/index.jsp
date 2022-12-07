@@ -104,6 +104,11 @@
         });
     });
 
+    $(document).ready(function(){
+        $("#sheet").click(function(){
+            window.location.href="sheet.jsp"
+        });
+    });
 
 </script>
 </head>
@@ -189,5 +194,6 @@
         <input type="button" id="test1" value="测试界面1">
         <input type="button" id="test2" value="eazyui测试界面1">
         <input type="button" id="eazyui" value="新eazyui测试界面">
+        <input type="button" id="sheet" value="数据变更">
 </body>
 </html>

@@ -7,8 +7,7 @@ import org.junit.jupiter.api.Test;
 import java.io.BufferedReader;
 import java.io.FileOutputStream;
 import java.io.FileReader;
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class stringTest {
 
@@ -238,6 +237,57 @@ public class stringTest {
             stringBuilder.append("'"+line[0]+"',");
             stringBuilder.append("7,");
             stringBuilder.append("'"+line[1].replace("t_course_section_study_log_","t_course_section_study_progress_")+"',");
+            stringBuilder.append("unix_timestamp(now())*1000);");
+            stringBuilder.append("\n");
+        }
+        FileOutputStream fos = new FileOutputStream("D:/ddl.sql");
+        fos.write(stringBuilder.toString().getBytes());
+        fos.close();
+    }
+
+
+    @Test
+    public void exaption(){
+        List<Integer> list = new ArrayList();
+        list.add(1);
+        list.add(1);
+        list.add(2);
+        list.add(1);
+//        for (Integer i : list){
+//            list.remove(i);
+//        }
+        List<Integer> list1 = list.subList(0,1);
+        List<Integer> list2 = Arrays.asList(1,2,3);
+//        list2.add(4);
+        System.out.println(list1.add(3));
+
+        int[] a = {1,2,3};
+        System.out.println(Arrays.asList(a));
+
+    }
+
+
+    String str123 = "138d4731-a361-3f43-a554-05625405f4a6\n" +
+            "40109eca-f999-3660-82ed-82401882ebde\n" +
+            "a3fba931-21ba-3fb7-af4e-2a4815c398a3\n" +
+            "a650bff7-9ed3-36c1-82f8-b94de0a01f80\n" +
+            "ad7224ea-9040-36da-a8d8-5e61303d12f8\n" +
+            "e86ba2a9-e8b6-36ae-b6f3-b0f20846dfde\n" +
+            "f3507498-f5d8-3504-85ef-e35fa367a839\n" +
+            "f3726d19-c6d1-3145-ade6-7533903c3550\n" +
+            "fa46193c-a7ee-36ef-86cb-101bc2faf203\n";
+
+
+    @Test
+    public void getConfig1() throws Exception{
+        String[] lines = str123.split("\\r?\\n");
+        System.out.println(lines.length);
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String s:lines){
+            stringBuilder.append("INSERT INTO `course-study`.t_audience_member (f_id, f_item_id, f_member_id, f_create_time) VALUES (");
+            stringBuilder.append("'"+java.util.UUID.randomUUID().toString()+"',");
+            stringBuilder.append("'9c9c9ec8-536b-4333-aff1-4165a05feb1a',");
+            stringBuilder.append("'"+s+"',");
             stringBuilder.append("unix_timestamp(now())*1000);");
             stringBuilder.append("\n");
         }

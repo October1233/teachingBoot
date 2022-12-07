@@ -31,6 +31,11 @@ public class User {
     private List<School> schools;
     private ScreenConditions screenConditions;
 
+    public User(int age,Integer id){
+        this.age = age;
+        this.id = id;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

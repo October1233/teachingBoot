@@ -25,7 +25,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 @MapperScan(basePackages = "com.shiyue.springboot.repository")
 @EnableScheduling
 @EnableTransactionManagement
-public class SpringbootApplication implements CommandLineRunner {
+public class SpringbootApplication{
 
     public static void main(String[] args) {
         SpringApplication.run(SpringbootApplication.class, args);
@@ -55,14 +55,14 @@ public class SpringbootApplication implements CommandLineRunner {
 
 
     //打印springbean
-    @Override
-    public void run(String... args) {
-        String[] beans = appContext.getBeanDefinitionNames();
-        Arrays.sort(beans);
-        for (String bean : beans) {
-            System.out.println(bean + " of Type :: " + appContext.getBean(bean).getClass());
-        }
-    }
+//    @Override
+//    public void run(String... args) {
+//        String[] beans = appContext.getBeanDefinitionNames();
+//        Arrays.sort(beans);
+//        for (String bean : beans) {
+//            System.out.println(bean + " of Type :: " + appContext.getBean(bean).getClass());
+//        }
+//    }
 
     
 
