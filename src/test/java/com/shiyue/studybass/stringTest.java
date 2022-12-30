@@ -4,9 +4,7 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.junit.jupiter.api.Test;
 
-import java.io.BufferedReader;
-import java.io.FileOutputStream;
-import java.io.FileReader;
+import java.io.*;
 import java.util.*;
 
 public class stringTest {
@@ -267,15 +265,8 @@ public class stringTest {
     }
 
 
-    String str123 = "138d4731-a361-3f43-a554-05625405f4a6\n" +
-            "40109eca-f999-3660-82ed-82401882ebde\n" +
-            "a3fba931-21ba-3fb7-af4e-2a4815c398a3\n" +
-            "a650bff7-9ed3-36c1-82f8-b94de0a01f80\n" +
-            "ad7224ea-9040-36da-a8d8-5e61303d12f8\n" +
-            "e86ba2a9-e8b6-36ae-b6f3-b0f20846dfde\n" +
-            "f3507498-f5d8-3504-85ef-e35fa367a839\n" +
-            "f3726d19-c6d1-3145-ade6-7533903c3550\n" +
-            "fa46193c-a7ee-36ef-86cb-101bc2faf203\n";
+    String str123 = "f549b2a2-7b43-31a2-b081-70e77654cb2d\n" +
+            "69a3a82e-3683-3889-9734-239cb955b93f\n";
 
 
     @Test
@@ -286,7 +277,7 @@ public class stringTest {
         for (String s:lines){
             stringBuilder.append("INSERT INTO `course-study`.t_audience_member (f_id, f_item_id, f_member_id, f_create_time) VALUES (");
             stringBuilder.append("'"+java.util.UUID.randomUUID().toString()+"',");
-            stringBuilder.append("'9c9c9ec8-536b-4333-aff1-4165a05feb1a',");
+            stringBuilder.append("'8d1e40b3-c205-45b4-a24f-bfab33ea931c',");
             stringBuilder.append("'"+s+"',");
             stringBuilder.append("unix_timestamp(now())*1000);");
             stringBuilder.append("\n");
@@ -296,6 +287,271 @@ public class stringTest {
         fos.close();
     }
 
+
+    @Test
+    public void sadwatttt() throws Exception{
+        String a = "t_course_section_study_log_ah_day\n" +
+                "t_course_section_study_log_bj_day\n" +
+                "t_course_section_study_log_cm_day\n" +
+                "t_course_section_study_log_cq_day\n" +
+                "t_course_section_study_log_eb_day\n" +
+                "t_course_section_study_log_fj_day\n" +
+                "t_course_section_study_log_gd_day\n" +
+                "t_course_section_study_log_gs_day\n" +
+                "t_course_section_study_log_gx_day\n" +
+                "t_course_section_study_log_gz_day\n" +
+                "t_course_section_study_log_hb_day\n" +
+                "t_course_section_study_log_hl_day\n" +
+                "t_course_section_study_log_hn_day\n" +
+                "t_course_section_study_log_jl_day\n" +
+                "t_course_section_study_log_js_day\n" +
+                "t_course_section_study_log_jx_day\n" +
+                "t_course_section_study_log_ln_day\n" +
+                "t_course_section_study_log_nm_day\n" +
+                "t_course_section_study_log_nx_day\n" +
+                "t_course_section_study_log_other_day\n" +
+                "t_course_section_study_log_qh_day\n" +
+                "t_course_section_study_log_qo_day\n" +
+                "t_course_section_study_log_sc_day\n" +
+                "t_course_section_study_log_sd_day\n" +
+                "t_course_section_study_log_sh_day\n" +
+                "t_course_section_study_log_sn_day\n" +
+                "t_course_section_study_log_sx_day\n" +
+                "t_course_section_study_log_tj_day\n" +
+                "t_course_section_study_log_xj_day\n" +
+                "t_course_section_study_log_xn_day\n" +
+                "t_course_section_study_log_xz_day\n" +
+                "t_course_section_study_log_yn_day\n" +
+                "t_course_section_study_log_zgtt_day\n" +
+                "t_course_section_study_log_zj_day\n" +
+                "t_course_section_study_log_zx_day\n";
+
+        String[] lines = a.split("\\r?\\n");
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String s: lines){
+            stringBuilder.append("alter table ");
+            stringBuilder.append(s);
+            stringBuilder.append(" change t_click f_click int default 0 null comment '点击次数';");
+            stringBuilder.append("\n");
+        }
+
+        FileOutputStream fos = new FileOutputStream("D:/ddl.sql");
+        fos.write(stringBuilder.toString().getBytes());
+        fos.close();
+
+    }
+
+
+
+    @Test
+    public void sadwattttr() throws Exception{
+        String a = "t_subject_study_log_ah_day\n" +
+                "t_subject_study_log_bj_day\n" +
+                "t_subject_study_log_cm_day\n" +
+                "t_subject_study_log_cq_day\n" +
+                "t_subject_study_log_eb_day\n" +
+                "t_subject_study_log_fj_day\n" +
+                "t_subject_study_log_gd_day\n" +
+                "t_subject_study_log_gs_day\n" +
+                "t_subject_study_log_gx_day\n" +
+                "t_subject_study_log_gz_day\n" +
+                "t_subject_study_log_hb_day\n" +
+                "t_subject_study_log_hl_day\n" +
+                "t_subject_study_log_hn_day\n" +
+                "t_subject_study_log_jl_day\n" +
+                "t_subject_study_log_js_day\n" +
+                "t_subject_study_log_jx_day\n" +
+                "t_subject_study_log_ln_day\n" +
+                "t_subject_study_log_nm_day\n" +
+                "t_subject_study_log_nx_day\n" +
+                "t_subject_study_log_other_day\n" +
+                "t_subject_study_log_qh_day\n" +
+                "t_subject_study_log_qo_day\n" +
+                "t_subject_study_log_sc_day\n" +
+                "t_subject_study_log_sd_day\n" +
+                "t_subject_study_log_sh_day\n" +
+                "t_subject_study_log_sn_day\n" +
+                "t_subject_study_log_sx_day\n" +
+                "t_subject_study_log_tj_day\n" +
+                "t_subject_study_log_xj_day\n" +
+                "t_subject_study_log_xn_day\n" +
+                "t_subject_study_log_xz_day\n" +
+                "t_subject_study_log_yn_day\n" +
+                "t_subject_study_log_zgtt_day\n" +
+                "t_subject_study_log_zj_day\n" +
+                "t_subject_study_log_zx_day\n";
+
+        String[] lines = a.split("\\r?\\n");
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String s: lines){
+            stringBuilder.append("alter table ");
+            stringBuilder.append(s);
+            stringBuilder.append(" change t_click f_click int default 0 null comment '点击次数';");
+            stringBuilder.append("\n");
+        }
+
+        FileOutputStream fos = new FileOutputStream("D:/ddl.sql");
+        fos.write(stringBuilder.toString().getBytes());
+        fos.close();
+
+    }
+
+
+    @Test
+    public void tostr() throws Exception{
+        String a = "t_subject_study_log_ah_day\n" +
+                "t_subject_study_log_bj_day\n" +
+                "t_subject_study_log_cm_day\n" +
+                "t_subject_study_log_cq_day\n" +
+                "t_subject_study_log_eb_day\n" +
+                "t_subject_study_log_fj_day\n" +
+                "t_subject_study_log_gd_day\n" +
+                "t_subject_study_log_gs_day\n" +
+                "t_subject_study_log_gx_day\n" +
+                "t_subject_study_log_gz_day\n" +
+                "t_subject_study_log_hb_day\n" +
+                "t_subject_study_log_hl_day\n" +
+                "t_subject_study_log_hn_day\n" +
+                "t_subject_study_log_jl_day\n" +
+                "t_subject_study_log_js_day\n" +
+                "t_subject_study_log_jx_day\n" +
+                "t_subject_study_log_ln_day\n" +
+                "t_subject_study_log_nm_day\n" +
+                "t_subject_study_log_nx_day\n" +
+                "t_subject_study_log_other_day\n" +
+                "t_subject_study_log_qh_day\n" +
+                "t_subject_study_log_qo_day\n" +
+                "t_subject_study_log_sc_day\n" +
+                "t_subject_study_log_sd_day\n" +
+                "t_subject_study_log_sh_day\n" +
+                "t_subject_study_log_sn_day\n" +
+                "t_subject_study_log_sx_day\n" +
+                "t_subject_study_log_tj_day\n" +
+                "t_subject_study_log_xj_day\n" +
+                "t_subject_study_log_xn_day\n" +
+                "t_subject_study_log_xz_day\n" +
+                "t_subject_study_log_yn_day\n" +
+                "t_subject_study_log_zgtt_day\n" +
+                "t_subject_study_log_zj_day\n" +
+                "t_subject_study_log_zx_day\n";
+
+        String[] lines = a.split("\\r?\\n");
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String s: lines){
+            stringBuilder.append(s).append("|");
+        }
+        System.out.println(stringBuilder.toString());
+    }
+
+    @Test
+    public void sadstr() throws Exception{
+        String a = "t_course_section_study_log_ah_day\n" +
+                "t_course_section_study_log_bj_day\n" +
+                "t_course_section_study_log_cm_day\n" +
+                "t_course_section_study_log_cq_day\n" +
+                "t_course_section_study_log_eb_day\n" +
+                "t_course_section_study_log_fj_day\n" +
+                "t_course_section_study_log_gd_day\n" +
+                "t_course_section_study_log_gs_day\n" +
+                "t_course_section_study_log_gx_day\n" +
+                "t_course_section_study_log_gz_day\n" +
+                "t_course_section_study_log_hb_day\n" +
+                "t_course_section_study_log_hl_day\n" +
+                "t_course_section_study_log_hn_day\n" +
+                "t_course_section_study_log_jl_day\n" +
+                "t_course_section_study_log_js_day\n" +
+                "t_course_section_study_log_jx_day\n" +
+                "t_course_section_study_log_ln_day\n" +
+                "t_course_section_study_log_nm_day\n" +
+                "t_course_section_study_log_nx_day\n" +
+                "t_course_section_study_log_other_day\n" +
+                "t_course_section_study_log_qh_day\n" +
+                "t_course_section_study_log_qo_day\n" +
+                "t_course_section_study_log_sc_day\n" +
+                "t_course_section_study_log_sd_day\n" +
+                "t_course_section_study_log_sh_day\n" +
+                "t_course_section_study_log_sn_day\n" +
+                "t_course_section_study_log_sx_day\n" +
+                "t_course_section_study_log_tj_day\n" +
+                "t_course_section_study_log_xj_day\n" +
+                "t_course_section_study_log_xn_day\n" +
+                "t_course_section_study_log_xz_day\n" +
+                "t_course_section_study_log_yn_day\n" +
+                "t_course_section_study_log_zgtt_day\n" +
+                "t_course_section_study_log_zj_day\n" +
+                "t_course_section_study_log_zx_day\n";
+
+        String[] lines = a.split("\\r?\\n");
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String s: lines){
+            stringBuilder.append(s).append("|");
+        }
+        System.out.println(stringBuilder.toString());
+
+
+    }
+
+
+
+
+    @Test
+    public void getSql() throws IOException {
+        String sql = "t_course_study_progress\n" +
+                "t_course_study_progress_zx\n" +
+                "t_course_study_progress_zj\n" +
+                "t_course_study_progress_zgtt\n" +
+                "t_course_study_progress_yn\n" +
+                "t_course_study_progress_xz\n" +
+                "t_course_study_progress_xn\n" +
+                "t_course_study_progress_xj\n" +
+                "t_course_study_progress_tj\n" +
+                "t_course_study_progress_sx\n" +
+                "t_course_study_progress_sn\n" +
+                "t_course_study_progress_sh\n" +
+                "t_course_study_progress_sd\n" +
+                "t_course_study_progress_sc\n" +
+                "t_course_study_progress_qo\n" +
+                "t_course_study_progress_qh\n" +
+                "t_course_study_progress_other\n" +
+                "t_course_study_progress_nx\n" +
+                "t_course_study_progress_nm\n" +
+                "t_course_study_progress_ln\n" +
+                "t_course_study_progress_jx\n" +
+                "t_course_study_progress_js\n" +
+                "t_course_study_progress_jl\n" +
+                "t_course_study_progress_hn\n" +
+                "t_course_study_progress_hl\n" +
+                "t_course_study_progress_hb\n" +
+                "t_course_study_progress_gz\n" +
+                "t_course_study_progress_gx\n" +
+                "t_course_study_progress_gs\n" +
+                "t_course_study_progress_gd\n" +
+                "t_course_study_progress_fj\n" +
+                "t_course_study_progress_eb\n" +
+                "t_course_study_progress_cq\n" +
+                "t_course_study_progress_cm\n" +
+                "t_course_study_progress_bj\n" +
+                "t_course_study_progress_ah\n";
+
+//        String[] lines = sql.split("\\r?\\n");
+//        StringBuilder stringBuilder = new StringBuilder();
+//        for (String s: lines){
+//            stringBuilder.append("alter table ");
+//            stringBuilder.append(s);
+//            stringBuilder.append(" add f_subject_finish_time bigint null comment '专题必修课完成时间';");
+//            stringBuilder.append("\n");
+//        }
+//
+//        FileOutputStream fos = new FileOutputStream("D:/ddl.sql");
+//        fos.write(stringBuilder.toString().getBytes());
+//        fos.close();
+        String[] lines = sql.split("\\r?\\n");
+        StringBuilder stringBuilder = new StringBuilder();
+        for (String s: lines){
+            stringBuilder.append(s).append("|");
+        }
+        System.out.println(stringBuilder.toString());
+    }
 
 
 }

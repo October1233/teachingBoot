@@ -18,61 +18,58 @@
     /**
      * 导入
      */
-     function pushExcel(){
-        var file = document.getElementById("person_list").files[0];
-        var r = new FileReader();
-        r.readAsDataURL(file);
-        if(null != file){
-            var reader = new FileReader();
-            reader.readAsDataURL(file);
-            reader.onload = function (e) {
-                vm.importInfo.personExcel = e.target.result;
-            }
-        }
-    }
-
-    function uploadExcel(){
-        //.......
-        //这里主要做一些数据的判断，或者其他参数的一个绑定。
-        if( "" === vm.importInfo.personExcel || null == vm.importInfo.personExcel){
-            layer.msg("请上传表格！")
-            return;
-        }
+//导入文件
+    function importExp() {
+        var formData = new FormData();
+        var name = $("#upfile").val();
+        var row = $("#row").val();
+        formData.append("file",$("#upfile")[0].files[0]);
+        formData.append("name",name);
+        formData.append("row",row);
         $.ajax({
-            type: "POST",
-            url: baseURL + "basic/person/bulkimport",
-            contentType: "application/json",
-            data: JSON.stringify(vm.importInfo),
-            success: function (r) {
-                if (r.code === 0) {
-                    if(null != r.data && 0 !== r.data.length){
-                        //下载未通过的人员Excel
-                        vm.downloadExcel(r.data);
-                    }else{
-                        layer.msg("所有人员已全部导入成功！")
-                    }
-                    vm.showList = true;
-                    vm.showImport = false;
-                    location.reload();
-                } else {
-                    alert(r.message);
+            url : '/xslxSheet/xslxSheet',
+            type : 'POST',
+            async : false,
+            data : formData,
+            // 告诉jQuery不要去处理发送的数据
+            processData : false,
+            // 告诉jQuery不要去设置Content-Type请求头
+            contentType : false,
+            beforeSend:function(){
+                console.log("正在进行，请稍候");
+            },
+            success : function(responseStr) {
+                if(responseStr=="01"){
+                    alert("导入成功");
+                }else{
+                    alert("导入失败");
                 }
             }
-        })
+        });
     }
-
 
 </script>
 </head>
 <body>
 <h1>数据交换</h1>
-<div class="form-group" id="excel-file" style="margin-top: 10px">
-    <div class="col-sm-2 control-label" >上传表格(仅支持excel)</div>
-    <div class="col-sm-10">
-        <input id="person_list" type="file" class="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet, application/vnd.ms-excel" onclick="pushExcel()"/>
-    </div>
-    <span style="color:red">*</span>
-</div>
+<li>
+    <span>上&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;传：</span>
+    <span class="input">
+   <input type="file" id="upfile" name="upfile" placeholder="" title="选择文件"/>
+        <br/>
+
+</span>
+</li>
+<li>
+    <span>哪&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;列：</span>
+    <input type="text" id="row" name="row" />
+    <br/>
+</li>
+<li>
+    <span>冲&nbsp;&nbsp;冲&nbsp;冲：</span>
+    <button onclick="importExp();">导入</button>
+    <span>格式：.xls</span>
+</li>
 
 </body>
 </html>

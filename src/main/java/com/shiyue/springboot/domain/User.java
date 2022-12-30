@@ -30,6 +30,7 @@ public class User {
     private BigDecimal amount;
     private List<School> schools;
     private ScreenConditions screenConditions;
+    private Long inDate;
 
     public User(int age,Integer id){
         this.age = age;

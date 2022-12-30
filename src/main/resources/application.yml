@@ -9,9 +9,9 @@ Spring:
       prefix: /WEB-INF/pages/
       suffix: .jsp
   datasource:
-    url: jdbc:mysql://localhost:3306/flowable_test?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    url: jdbc:mysql://39.101.137.247:3306/user?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
     username: root
-    password: 123456
+    password: Shiyue@123
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:

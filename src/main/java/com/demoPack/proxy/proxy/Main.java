@@ -258,4 +258,24 @@ public class Main {
         System.out.println(e_a);
     }
 
+
+    @Test
+    public void  testc(){
+        List<User> users = new ArrayList<>();
+        Long indate = 111L;
+        Integer a = 1;
+        for (int i = 1;i<5;i++){
+            User user = new User();
+            user.setInDate(indate);
+            user.setId(a);
+            indate +=111L;
+            a+=1;
+            users.add(user);
+        }
+        System.out.println(users);
+        System.out.println(users.stream()
+                .filter(course -> course.getId().equals(2) || course.getId().equals(4))
+                .collect(Collectors.toList()));
+
+    }
 }
