@@ -1,5 +1,6 @@
 package com.shiyue.studybass;
 
+import com.alibaba.fastjson.JSONObject;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.junit.jupiter.api.Test;
@@ -445,41 +446,27 @@ public class stringTest {
 
     @Test
     public void sadstr() throws Exception{
-        String a = "t_course_section_study_log_ah_day\n" +
-                "t_course_section_study_log_bj_day\n" +
-                "t_course_section_study_log_cm_day\n" +
-                "t_course_section_study_log_cq_day\n" +
-                "t_course_section_study_log_eb_day\n" +
-                "t_course_section_study_log_fj_day\n" +
-                "t_course_section_study_log_gd_day\n" +
-                "t_course_section_study_log_gs_day\n" +
-                "t_course_section_study_log_gx_day\n" +
-                "t_course_section_study_log_gz_day\n" +
-                "t_course_section_study_log_hb_day\n" +
-                "t_course_section_study_log_hl_day\n" +
-                "t_course_section_study_log_hn_day\n" +
-                "t_course_section_study_log_jl_day\n" +
-                "t_course_section_study_log_js_day\n" +
-                "t_course_section_study_log_jx_day\n" +
-                "t_course_section_study_log_ln_day\n" +
-                "t_course_section_study_log_nm_day\n" +
-                "t_course_section_study_log_nx_day\n" +
-                "t_course_section_study_log_other_day\n" +
-                "t_course_section_study_log_qh_day\n" +
-                "t_course_section_study_log_qo_day\n" +
-                "t_course_section_study_log_sc_day\n" +
-                "t_course_section_study_log_sd_day\n" +
-                "t_course_section_study_log_sh_day\n" +
-                "t_course_section_study_log_sn_day\n" +
-                "t_course_section_study_log_sx_day\n" +
-                "t_course_section_study_log_tj_day\n" +
-                "t_course_section_study_log_xj_day\n" +
-                "t_course_section_study_log_xn_day\n" +
-                "t_course_section_study_log_xz_day\n" +
-                "t_course_section_study_log_yn_day\n" +
-                "t_course_section_study_log_zgtt_day\n" +
-                "t_course_section_study_log_zj_day\n" +
-                "t_course_section_study_log_zx_day\n";
+        String a = "t_repository_course_info\n" +
+                "t_repository_teacher_specialist\n" +
+                "t_repository_dwell\n" +
+                "t_repository_professional_emphasis\n" +
+                "t_repository_project_lecturer\n" +
+                "t_repository_seminar_room\n" +
+                "t_repository_project\n" +
+                "t_repository_supplier_photo\n" +
+                "t_repository_business_attachment\n" +
+                "t_repository_project_student\n" +
+                "t_repository_students\n" +
+                "t_repository_audience\n" +
+                "t_repository_supplier\n" +
+                "t_repository_supplier_tag\n" +
+                "t_repository_tag\n" +
+                "t_repository_project_supplier\n" +
+                "t_repository_professional_teacher\n" +
+                "t_repository_project_expend\n" +
+                "t_repository_evaluate\n" +
+                "t_repository_project_course\n" +
+                "t_repository_project_photo\n";
 
         String[] lines = a.split("\\r?\\n");
         StringBuilder stringBuilder = new StringBuilder();
@@ -495,7 +482,7 @@ public class stringTest {
 
 
     @Test
-    public void getSql() throws IOException {
+    public void getSql() throws Exception {
         String sql = "t_course_study_progress\n" +
                 "t_course_study_progress_zx\n" +
                 "t_course_study_progress_zj\n" +
@@ -551,7 +538,11 @@ public class stringTest {
             stringBuilder.append(s).append("|");
         }
         System.out.println(stringBuilder.toString());
+        throw new Exception("1");
     }
+
+
+
 
 
 }
