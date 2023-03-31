@@ -1,0 +1,75 @@
+
+\	java:S112ï"FDefine and throw a dedicated exception instead of using a generic one.(“—©
+\	java:S112ı"FDefine and throw a dedicated exception instead of using a generic one.(áŞ­ş
+F
+java:S3740ˆ"/Provide the parametrized type for this generic.(‰ÌÑŒ
+K
+java:S3740‰"/Provide the parametrized type for this generic.(Æ¢‰½üÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(“ğ™Éøÿÿÿÿ
+S	java:S106<"9Replace this use of System.out or System.err by a logger.(Êô²ºúÿÿÿÿ
+`
+java:S1124U"EReorder the modifiers to comply with the Java Language Specification.(Ù÷Îàşÿÿÿÿ
+V	java:S125A"<This block of commented-out lines of code should be removed.(Ê³Àûÿÿÿÿ
+N	java:S106Z"9Replace this use of System.out or System.err by a logger.(Ù÷ƒĞ
+W
+java:S1075a"ARefactor your code to get this URI from a customizable parameter.(ó·œ
+N	java:S106q"9Replace this use of System.out or System.err by a logger.(…ò£—
+S	java:S106s"9Replace this use of System.out or System.err by a logger.(ŞËşÁıÿÿÿÿ
+N
+java:S1854ˆ"7Remove this useless assignment to local variable "map".(‰ÌÑŒ
+T
+java:S1854‰"8Remove this useless assignment to local variable "list".(Æ¢‰½üÿÿÿÿ
+V
+java:S1075|"ARefactor your code to get this URI from a customizable parameter.(¡¸š_
+W
+java:S1075}"ARefactor your code to get this URI from a customizable parameter.(‚îøÄ
+V	java:S125~"<This block of commented-out lines of code should be removed.(È²‘—ûÿÿÿÿ
+?
+java:S1481ˆ"(Remove this unused "map" local variable.(‰ÌÑŒ
+E
+java:S1481‰")Remove this unused "list" local variable.(Æ¢‰½üÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(¡¤ ëşÿÿÿÿ
+]
+java:S1075¢"ARefactor your code to get this URI from a customizable parameter.(’ùÂÎşÿÿÿÿ
+T	java:S106¥"9Replace this use of System.out or System.err by a logger.(ŞËşÁıÿÿÿÿ
+T	java:S106´"9Replace this use of System.out or System.err by a logger.(œÚ‹âşÿÿÿÿ
+T	java:S106¶"9Replace this use of System.out or System.err by a logger.(œÚ‹âşÿÿÿÿ
+T	java:S106È"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+T	java:S106Ë"9Replace this use of System.out or System.err by a logger.(°ıƒ²ùÿÿÿÿ
+C
+java:S1481Õ"'Remove this unused "cf" local variable.(Ğªà•ıÿÿÿÿ
+=
+java:S1481Ø"&Remove this unused "i" local variable.(»ŸÜš
+Q	java:S125Ú"<This block of commented-out lines of code should be removed.(¸Ùâ<
+T	java:S106ã"9Replace this use of System.out or System.err by a logger.(©şêÜúÿÿÿÿ
+T	java:S106æ"9Replace this use of System.out or System.err by a logger.(°ıƒ²ùÿÿÿÿ
+ƒ
+java:S1130ï"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(“—©
+W	java:S125ğ"<This block of commented-out lines of code should be removed.(»¨¨×ÿÿÿÿÿ
+O	java:S106ø"9Replace this use of System.out or System.err by a logger.(ì°¥”
+O	java:S106ù"9Replace this use of System.out or System.err by a logger.(Õ«£î
+Š
+java:S1130ı"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(áŞ­ş8ıª°Î0
+T	java:S106€"9Replace this use of System.out or System.err by a logger.(¯°‚¦ıÿÿÿÿ
+V	java:S106‚"9Replace this use of System.out or System.err by a logger.(‘Ğ­Â8¯¯¯°Î0
+_
+java:S1128"BRemove this unused import 'javax.servlet.http.HttpServletRequest'.(ø©¹…8şª°Î0
+`
+java:S1128"CRemove this unused import 'javax.servlet.http.HttpServletResponse'.(Á¨ïë8şª°Î0
+M
+java:S1128"0Remove this unused import 'java.net.URLEncoder'.(ê¢ºÆ8şª°Î0
+P
+java:S1128"3Remove this unused import 'java.text.NumberFormat'.(¿¸»8şª°Î0
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8şª°Î0
+J
+java:S1128"-Remove this unused import 'java.time.ZoneId'.( Æ½“8şª°Î0
+Y
+java:S1128"7Remove this unused import 'java.util.stream.Collector'.(ß‹ÎÓøÿÿÿÿ8şª°Î0
+Q
+java:S1141Â"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+Q
+java:S1141ß"5Extract this nested try block into a separate method.(¡»¢üùÿÿÿÿ
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(”ÁŞÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ƒıÆ´úÿÿÿÿ

@@ -1,0 +1,26 @@
+
+D
+java:S3740E"/Provide the parametrized type for this generic.(ó’Ú
+E
+java:S3740R"/Provide the parametrized type for this generic.(ÿ½·”
+P
+java:S1118
+":Add a private constructor to hide the implicit public one.(€ü¤õ
+V	java:S125"<This block of commented-out lines of code should be removed.(·ÉÁÞùÿÿÿÿ
+Q	java:S1252"<This block of commented-out lines of code should be removed.(Æ²ºˆ
+m
+java:S3252|"RUse static access with "org.apache.poi.ss.usermodel.Cell" for "CELL_TYPE_NUMERIC".(‡§­ãùÿÿÿÿ
+n
+java:S3252}"XUse static access with "org.apache.poi.ss.usermodel.DateUtil" for "isCellDateFormatted".(‰æ·À
+h
+java:S3252‚"QUse static access with "org.apache.poi.ss.usermodel.Cell" for "CELL_TYPE_STRING".(¨…Ú™
+l
+java:S3252„"PUse static access with "org.apache.poi.ss.usermodel.Cell" for "CELL_TYPE_BLANK".(öœÓÔøÿÿÿÿ
+i
+java:S3252†"RUse static access with "org.apache.poi.ss.usermodel.Cell" for "CELL_TYPE_BOOLEAN".(‚¸Âç
+g
+java:S3252ˆ"PUse static access with "org.apache.poi.ss.usermodel.Cell" for "CELL_TYPE_ERROR".(ÂÖìª
+n
+java:S3252Š"RUse static access with "org.apache.poi.ss.usermodel.Cell" for "CELL_TYPE_FORMULA".(öÂÍüúÿÿÿÿ
+U
+java:S1128":Remove this unused import 'org.apache.poi.ss.util.Region'.(ÎÈäïþÿÿÿÿ

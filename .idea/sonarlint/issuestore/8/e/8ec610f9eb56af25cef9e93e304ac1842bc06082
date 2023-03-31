@@ -1,0 +1,237 @@
+
+`	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(“Î˜úÿÿÿÿ
+a	java:S112ş"FDefine and throw a dedicated exception instead of using a generic one.(ÙÓÆøúÿÿÿÿ
+a	java:S112ƒ"FDefine and throw a dedicated exception instead of using a generic one.(ÿ¢Ø¨ÿÿÿÿÿ
+J
+java:S37407"/Provide the parametrized type for this generic.(óÏÄ¢üÿÿÿÿ
+J
+java:S3740X"/Provide the parametrized type for this generic.( £‚şÿÿÿÿ
+E
+java:S3740^"/Provide the parametrized type for this generic.(…ä×Á
+E
+java:S3740^"/Provide the parametrized type for this generic.(…ä×Á
+E
+java:S3740u"/Provide the parametrized type for this generic.(† òİ
+E
+java:S3740u"/Provide the parametrized type for this generic.(† òİ
+F
+java:S3740"/Provide the parametrized type for this generic.(† òİ
+F
+java:S3740"/Provide the parametrized type for this generic.(† òİ
+F
+java:S3740"/Provide the parametrized type for this generic.(æ½äê
+K
+java:S3740›"/Provide the parametrized type for this generic.( £‚şÿÿÿÿ
+F
+java:S3740¢"/Provide the parametrized type for this generic.(®Ô×Š
+K
+java:S3740ª"/Provide the parametrized type for this generic.(™Ş­Ôşÿÿÿÿ
+K
+java:S3740ª"/Provide the parametrized type for this generic.(™Ş­Ôşÿÿÿÿ
+F
+java:S3740¬"/Provide the parametrized type for this generic.(† òİ
+F
+java:S3740¬"/Provide the parametrized type for this generic.(† òİ
+K
+java:S3740×"/Provide the parametrized type for this generic.(™Ş­Ôşÿÿÿÿ
+K
+java:S3740×"/Provide the parametrized type for this generic.(™Ş­Ôşÿÿÿÿ
+F
+java:S3740Ù"/Provide the parametrized type for this generic.(ø ª
+K
+java:S3740¤"/Provide the parametrized type for this generic.(“¬ü¼üÿÿÿÿ
+K
+java:S3740¤"/Provide the parametrized type for this generic.(“¬ü¼üÿÿÿÿ
+K
+java:S3740´"/Provide the parametrized type for this generic.(¬¼â“ıÿÿÿÿ
+K
+java:S3740´"/Provide the parametrized type for this generic.(¬¼â“ıÿÿÿÿ
+K
+java:S3740’"/Provide the parametrized type for this generic.(“¬ü¼üÿÿÿÿ
+K
+java:S3740’"/Provide the parametrized type for this generic.(“¬ü¼üÿÿÿÿ
+F
+java:S3740×"/Provide the parametrized type for this generic.(ºíÂ¥
+F
+java:S3740×"/Provide the parametrized type for this generic.(ºíÂ¥
+K
+java:S3740Û"/Provide the parametrized type for this generic.(íÇó©şÿÿÿÿ
+F
+java:S3740ø"/Provide the parametrized type for this generic.(† òİ
+F
+java:S3740ø"/Provide the parametrized type for this generic.(† òİ
+M
+java:S1854G"7Remove this useless assignment to local variable "val".(¹Ö¦
+W
+java:S1075B"ARefactor your code to get this URI from a customizable parameter.(ÌÓÖê
+>
+java:S1481G"(Remove this unused "val" local variable.(¹Ö¦
+N	java:S106R"9Replace this use of System.out or System.err by a logger.(İ¥¨
+S	java:S106S"9Replace this use of System.out or System.err by a logger.(­ ‘ˆüÿÿÿÿ
+c	java:S100W"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¯ÿ€
+S
+java:S1854X"8Remove this useless assignment to local variable "list".( £‚şÿÿÿÿ
+D
+java:S1481X")Remove this unused "list" local variable.( £‚şÿÿÿÿ
+T
+java:S1854`">Remove this useless assignment to local variable "jsonObject".(™Ö…œ
+E
+java:S1481`"/Remove this unused "jsonObject" local variable.(™Ö…œ
+W
+java:S3457h"AFormat specifiers should be used instead of string concatenation.(ĞĞ
+\
+java:S3457j"AFormat specifiers should be used instead of string concatenation.(ó‘úßıÿÿÿÿ
+\
+java:S3457l"AFormat specifiers should be used instead of string concatenation.(¬¯ùâùÿÿÿÿ
+;
+java:S3457m"%String contains no format specifiers.(àŸ¤
+\
+java:S3457t"AFormat specifiers should be used instead of string concatenation.(… ô‰úÿÿÿÿ
+\
+java:S3457z"AFormat specifiers should be used instead of string concatenation.(ó‘úßıÿÿÿÿ
+]
+java:S3457ˆ"AFormat specifiers should be used instead of string concatenation.(âÀõĞşÿÿÿÿ
+O
+java:S1854"8Remove this useless assignment to local variable "list".(† òİ
+@
+java:S1481")Remove this unused "list" local variable.(† òİ
+]
+java:S3457•"AFormat specifiers should be used instead of string concatenation.(°é¦Šúÿÿÿÿ
+]
+java:S3457–"AFormat specifiers should be used instead of string concatenation.(íì éûÿÿÿÿ
+]
+java:S3457¥"AFormat specifiers should be used instead of string concatenation.(­ ¡¿øÿÿÿÿ
+Y
+java:S1854«"=Remove this useless assignment to local variable "jsonArray".(ŒÖ•ñùÿÿÿÿ
+J
+java:S1481«".Remove this unused "jsonArray" local variable.(ŒÖ•ñùÿÿÿÿ
+X
+java:S3457Â"AFormat specifiers should be used instead of string concatenation.(×„Ã‰
+W	java:S125¿"<This block of commented-out lines of code should be removed.(æ¦‹æûÿÿÿÿ
+X
+java:S3457Ã"AFormat specifiers should be used instead of string concatenation.(³ô¶Õ
+M
+java:S1481Í"6Remove this unused "simpleDateFormat1" local variable.(ùü¦
+]
+java:S3457Ğ"AFormat specifiers should be used instead of string concatenation.(åø€ùÿÿÿÿ
+X
+java:S3457Ò"AFormat specifiers should be used instead of string concatenation.(ı²Ùı
+]
+java:S3457ä"AFormat specifiers should be used instead of string concatenation.(°ÏÈ´úÿÿÿÿ
+W
+java:S3457æ"AFormat specifiers should be used instead of string concatenation.(Òù¸
+]
+java:S3457ë"AFormat specifiers should be used instead of string concatenation.(ÅºÎ™ùÿÿÿÿ
+T	java:S106î"9Replace this use of System.out or System.err by a logger.(‡Üø»üÿÿÿÿ
+T	java:S106õ"9Replace this use of System.out or System.err by a logger.(Û¾Àâıÿÿÿÿ
+ˆ
+java:S1130ş"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÙÓÆøúÿÿÿÿ
+T	java:S106ÿ"9Replace this use of System.out or System.err by a logger.( Ÿïúıÿÿÿÿ
+O	java:S106„"9Replace this use of System.out or System.err by a logger.(öˆëŞ
+u
+java:S2142‡"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+O	java:S106Š"9Replace this use of System.out or System.err by a logger.(äÊ©º
+\
+java:S1612"@Replace this lambda with method reference 'System.out::println'.(ÀÅ²şúÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ÀÅ²şúÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(“Ô‚„øÿÿÿÿ
+@
+java:S1481–")Remove this unused "user" local variable.(À«…
+u
+java:S2142ª"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+u
+java:S2142º"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+O	java:S106Ã"9Replace this use of System.out or System.err by a logger.(¯³Ó•
+T	java:S106Ä"9Replace this use of System.out or System.err by a logger.(óµßÇùÿÿÿÿ
+T	java:S106Ç"9Replace this use of System.out or System.err by a logger.(ÅÎÏúÿÿÿÿ
+N	java:S106á"9Replace this use of System.out or System.err by a logger.(ÛÕ›!
+^
+java:S1858á"H"ccccc" is already a string, there's no need to call "toString()" on it.(ÛÕ›!
+R	java:S125ã"<This block of commented-out lines of code should be removed.(ú Ÿ¸
+N	java:S106Š"9Replace this use of System.out or System.err by a logger.(‘¯Ü}
+O	java:S106‹"9Replace this use of System.out or System.err by a logger.(¸³õ›
+T	java:S106"9Replace this use of System.out or System.err by a logger.(Ş’©®øÿÿÿÿ
+u
+java:S2142˜"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+@
+java:S1481¨")Remove this unused "aä¸Š" local variable.(Êş­›
+c
+java:S2677©"LUse or store the value returned from "readLine" instead of throwing it away.(™¸¡
+<
+java:S1481ª"&Remove this unused "a" local variable.(ğ—c
+R	java:S125¹"<This block of commented-out lines of code should be removed.(ú Ÿ¸
+R	java:S125à"<This block of commented-out lines of code should be removed.(ıì€ı
+a
+java:S2147ê"ECombine this catch with the one at line 488, which has the same body.(åşŒóùÿÿÿÿ
+u
+java:S2142è"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+T	java:S106ï"9Replace this use of System.out or System.err by a logger.(¼¹‰úÿÿÿÿ
+T	java:S106ğ"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ
+T	java:S106ş"9Replace this use of System.out or System.err by a logger.(¼¹‰úÿÿÿÿ
+T	java:S106ÿ"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ
+ˆ
+java:S1130ƒ"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ÿ¢Ø¨ÿÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(»íÌ‘ùÿÿÿÿ
+a
+java:S1858"E"ss" is already a string, there's no need to call "toString()" on it.(»íÌ‘ùÿÿÿÿ
+<
+java:S3457œ"%String contains no format specifiers.(êÃ•ö
+u
+java:S2142Ÿ"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾
+T	java:S106©"9Replace this use of System.out or System.err by a logger.(”ü©½ûÿÿÿÿ
+\
+java:S1128
+"FRemove this unused import 'com.shiyue.springboot.service.TestService'.(ÆÑöÏ
+`
+java:S1128"JRemove this unused import 'com.shiyue.springboot.service.TestServiceImpl'.(¶Åçà
+E
+java:S10682"*Remove this unused "random" private field.(–ıŸ…ıÿÿÿÿ
+B
+java:S1144“"+Remove this unused private "thread" method.(©ê¸”
+p
+java:S2293°"YReplace the type specification in this constructor call with the diamond operator ("<>").(¥¯ê‰
+p
+java:S2293À"YReplace the type specification in this constructor call with the diamond operator ("<>").(Çœé’
+s
+java:S1192"WDefine a constant instead of duplicating this literal "ç¨‹åºè¿è¡Œæ—¶é—´ï¼š " 3 times.(Ş’©®øÿÿÿÿ
+d
+java:S1192f"IDefine a constant instead of duplicating this literal "zhaoying" 4 times.(»Şª×øÿÿÿÿ
+d
+java:S1192€"NDefine a constant instead of duplicating this literal "liangxiaofeng" 3 times.(œ±Ê
+g	java:S117¨"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êş­›
+D
+java:S1604"(Make this anonymous inner class a lambda(³³õ™şÿÿÿÿ
+x
+java:S1488ß"\Immediately return this expression instead of assigning it to the temporary variable "user".(Ø½úÿÿÿÿ
+M
+java:S2629h"7Use the built-in formatting to construct this argument.(ĞĞ
+R
+java:S2629j"7Use the built-in formatting to construct this argument.(ó‘úßıÿÿÿÿ
+R
+java:S2629l"7Use the built-in formatting to construct this argument.(¬¯ùâùÿÿÿÿ
+R
+java:S2629t"7Use the built-in formatting to construct this argument.(… ô‰úÿÿÿÿ
+R
+java:S2629z"7Use the built-in formatting to construct this argument.(ó‘úßıÿÿÿÿ
+S
+java:S2629ˆ"7Use the built-in formatting to construct this argument.(âÀõĞşÿÿÿÿ
+S
+java:S2629•"7Use the built-in formatting to construct this argument.(°é¦Šúÿÿÿÿ
+S
+java:S2629¥"7Use the built-in formatting to construct this argument.(­ ¡¿øÿÿÿÿ
+N
+java:S2629Â"7Use the built-in formatting to construct this argument.(×„Ã‰
+s
+java:S2629Ã"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(³ô¶Õ
+S
+java:S2629Ğ"7Use the built-in formatting to construct this argument.(åø€ùÿÿÿÿ
+S
+java:S2629ä"7Use the built-in formatting to construct this argument.(°ÏÈ´úÿÿÿÿ
+M
+java:S2629æ"7Use the built-in formatting to construct this argument.(Òù¸
+S
+java:S2629ë"7Use the built-in formatting to construct this argument.(ÅºÎ™ùÿÿÿÿ
+b
+java:S2184¹"FCast one of the operands of this multiplication operation to a "long".(æÓ Öıÿÿÿÿ
+b
+java:S2095C"LUse try-with-resources or close this "BufferedReader" in a "finally" clause.(ÊĞË

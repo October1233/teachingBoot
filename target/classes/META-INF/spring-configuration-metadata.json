@@ -1,0 +1,78 @@
+{
+  "groups": [
+    {
+      "name": "user",
+      "type": "com.shiyue.springboot.domain.User",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    }
+  ],
+  "properties": [
+    {
+      "name": "user.address",
+      "type": "java.lang.String",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.age",
+      "type": "java.lang.Integer",
+      "sourceType": "com.shiyue.springboot.domain.User",
+      "defaultValue": 0
+    },
+    {
+      "name": "user.amount",
+      "type": "java.math.BigDecimal",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.birthday",
+      "type": "java.util.Date",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.format-date",
+      "type": "java.lang.String",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.id",
+      "type": "java.lang.Integer",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.in-date",
+      "type": "java.lang.Long",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.password",
+      "type": "java.lang.String",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.schools",
+      "type": "java.util.List<com.shiyue.springboot.domain.School>",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.screen-conditions",
+      "type": "com.shiyue.springboot.domain.ScreenConditions",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.sex",
+      "type": "java.lang.String",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.surepassword",
+      "type": "java.lang.String",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    },
+    {
+      "name": "user.username",
+      "type": "java.lang.String",
+      "sourceType": "com.shiyue.springboot.domain.User"
+    }
+  ],
+  "hints": []
+}

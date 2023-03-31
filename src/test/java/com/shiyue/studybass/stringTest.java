@@ -1,6 +1,9 @@
 package com.shiyue.studybass;
 
 import com.alibaba.fastjson.JSONObject;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.junit.jupiter.api.Test;
@@ -543,6 +546,19 @@ public class stringTest {
 
 
 
+    @Test
+    public void orgDj() throws Exception{
+        File file = new File("D:/工作.xlsx");
+        XSSFWorkbook xssfWorkbook = new XSSFWorkbook(new FileInputStream(file));
+        XSSFSheet sheet = xssfWorkbook.getSheetAt(0);
+        int physicalNumberOfRows = sheet.getPhysicalNumberOfRows();
+        StringBuilder stringBuilder = new StringBuilder("");
+        for (int i = 1;i<physicalNumberOfRows;i++) {
+            XSSFRow xssfRow =  sheet.getRow(i);
+            stringBuilder.append("'").append(xssfRow.getCell(1)).append("',");
+        }
+        System.out.println(stringBuilder);
+    }
 
 
 }

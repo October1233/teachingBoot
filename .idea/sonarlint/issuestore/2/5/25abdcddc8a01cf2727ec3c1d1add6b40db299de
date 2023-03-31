@@ -1,0 +1,10 @@
+
+]	java:S125;"<This block of commented-out lines of code should be removed.(°¾„Ÿüÿÿÿÿ8ü¼®çÌ0
+d
+java:S1128"GRemove this unused import 'org.springframework.boot.CommandLineRunner'.(È—ÿÅ8†•¯çÌ0
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8†•¯çÌ0
+\
+java:S1128":Remove this unused import 'java.util.concurrent.Executor'.(÷ı¶Œúÿÿÿÿ8†•¯çÌ0
+a
+java:S1128"DRemove this unused import 'java.util.concurrent.ThreadPoolExecutor'.(¦ÿöÊ8‡•¯çÌ0

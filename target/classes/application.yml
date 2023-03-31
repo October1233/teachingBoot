@@ -1,0 +1,29 @@
+server:
+  port: 13121
+Student:
+  name: 十月
+  age: 33
+Spring:
+  mvc:
+    View:
+      prefix: /WEB-INF/pages/
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://39.101.137.247:3306/user?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+    username: root
+    password: Shiyue@123
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jackson:
+    serialization:
+      #格式化输出
+      indent_output: true
+      #忽略无法转换的对象
+      fail_on_empty_beans: false
+    #设置空如何序列化
+    default-property-inclusion: non_null
+    #日期格式化
+    date-format: yyyy-MM-dd
+    time-zone: GMT+8

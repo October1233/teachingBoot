@@ -1,0 +1,302 @@
+
+š
+java:S3577-"ƒRename class "Main" to match the regular expression: '^((Test|IT)[a-zA-Z0-9_]+|[A-Z][a-zA-Z0-9_]*(Test|Tests|TestCase|IT|ITCase))$'(àªÅö
+4
+java:S5786I"Remove this 'public' modifier.(™øËÈ
+5
+java:S5786ª"Remove this 'public' modifier.(‡æÜÓ
+:
+java:S5786³"Remove this 'public' modifier.(‡úÕˆùÿÿÿÿ
+:
+java:S5786Ó"Remove this 'public' modifier.(²İ•Øúÿÿÿÿ
+:
+java:S5786å"Remove this 'public' modifier.(¡™¼÷ıÿÿÿÿ
+:
+java:S5786ı"Remove this 'public' modifier.(×ş´Àıÿÿÿÿ
+:
+java:S5786¢"Remove this 'public' modifier.(…§Ò†üÿÿÿÿ
+:
+java:S5786«"Remove this 'public' modifier.(àÆÒıÿÿÿÿ
+5
+java:S5786à"Remove this 'public' modifier.(–šì×
+5
+java:S5786ñ"Remove this 'public' modifier.(¢‘„Ç
+:
+java:S5786ü"Remove this 'public' modifier.(”Øƒ˜ûÿÿÿÿ
+:
+java:S5786ˆ"Remove this 'public' modifier.(êğŞ¿ûÿÿÿÿ
+5
+java:S5786’"Remove this 'public' modifier.(€‹ñ´
+5
+java:S5786¦"Remove this 'public' modifier.(ùÑµŞ
+:
+java:S5786³"Remove this 'public' modifier.(ö•ışÿÿÿÿ
+:
+java:S5786¾"Remove this 'public' modifier.(¨³Ú÷úÿÿÿÿ
+:
+java:S5786Ö"Remove this 'public' modifier.(ôú·œÿÿÿÿÿ
+5
+java:S5786î"Remove this 'public' modifier.(¹®Ä
+4
+java:S5786¿"Remove this 'public' modifier.(¿ú²@
+:
+java:S5786Ş"Remove this 'public' modifier.(æ„àÙÿÿÿÿÿ
+:
+java:S5786ë"Remove this 'public' modifier.(—ù«“úÿÿÿÿ
+5
+java:S5786ö"Remove this 'public' modifier.(’ëöé
+:
+java:S5786ƒ"Remove this 'public' modifier.(ÕÔõ€úÿÿÿÿ
+5
+java:S5786“"Remove this 'public' modifier.(ôàÑ
+5
+java:S5786 "Remove this 'public' modifier.(üÿş
+5
+java:S5786á"Remove this 'public' modifier.(¢™’¨
+5
+java:S5786ø"Remove this 'public' modifier.(ßÔ¯É
+4
+java:S5786•"Remove this 'public' modifier.(—‘T
+5
+java:S5786¿"Remove this 'public' modifier.(‡Œ¨–
+:
+java:S5786Ì"Remove this 'public' modifier.(á¯›’ıÿÿÿÿ
+:
+java:S5786à"Remove this 'public' modifier.(ˆÖşÃÿÿÿÿÿ
+:
+java:S5786î"Remove this 'public' modifier.(Õê­ëøÿÿÿÿ
+:
+java:S5786ú"Remove this 'public' modifier.(Š–Œúÿÿÿÿ
+5
+java:S5786€"Remove this 'public' modifier.(ºê‚å
+:
+java:S5786‹"Remove this 'public' modifier.(’¶Öşüÿÿÿÿ
+:
+java:S5786²"Remove this 'public' modifier.(àª´àıÿÿÿÿ
+5
+java:S5786¹"Remove this 'public' modifier.(íçšÊ
+5
+java:S5786Á"Remove this 'public' modifier.(â½¨í
+5
+java:S5786É"Remove this 'public' modifier.(âûì¨
+5
+java:S5786Î"Remove this 'public' modifier.(°“’Ç
+:
+java:S5786Ø"Remove this 'public' modifier.(“å£ïûÿÿÿÿ
+5
+java:S5786õ"Remove this 'public' modifier.(©¿Æ‚
+:
+java:S5786œ"Remove this 'public' modifier.(„¡’Ùşÿÿÿÿ
+:
+java:S5786£"Remove this 'public' modifier.(ú•…Ãşÿÿÿÿ
+:
+java:S5786¸"Remove this 'public' modifier.(’â·Óùÿÿÿÿ
+:
+java:S5786À"Remove this 'public' modifier.(Ã–ôúÿÿÿÿ
+5
+java:S5786Ê"Remove this 'public' modifier.(¨Ø½Ü
+:
+java:S5786ƒ	"Remove this 'public' modifier.(Ş³†‚øÿÿÿÿ
+:
+java:S5786	"Remove this 'public' modifier.(Ëİğôøÿÿÿÿ
+:
+java:S5786—	"Remove this 'public' modifier.(„ôüûÿÿÿÿ
+5
+java:S5786ª	"Remove this 'public' modifier.(Æ¯Úˆ
+:
+java:S5786»	"Remove this 'public' modifier.(›“²Æúÿÿÿÿ
+5
+java:S5786È	"Remove this 'public' modifier.(°é½§
+:
+java:S5786ß	"Remove this 'public' modifier.(Ã¤•„şÿÿÿÿ
+:
+java:S5786ô	"Remove this 'public' modifier.(ğŞ­îşÿÿÿÿ
+5
+java:S5786Ÿ
+"Remove this 'public' modifier.(ìé¶Š
+:
+java:S5786¹
+"Remove this 'public' modifier.(Î¤¶òüÿÿÿÿ
+5
+java:S5786Ì
+"Remove this 'public' modifier.(Ñ«ü¶
+:
+java:S5786×
+"Remove this 'public' modifier.(Èã÷•şÿÿÿÿ
+5
+java:S5786İ
+"Remove this 'public' modifier.(¥Ù™¨
+:
+java:S5786æ
+"Remove this 'public' modifier.(ßÜÊúÿÿÿÿ
+:
+java:S5786ø
+"Remove this 'public' modifier.(ğªëŸùÿÿÿÿ
+:
+java:S5786…"Remove this 'public' modifier.(õåÛıÿÿÿÿ
+5
+java:S5786³"Remove this 'public' modifier.(Ğ£¸
+5
+java:S5786»"Remove this 'public' modifier.(ùáƒŸ
+:
+java:S5786Ï"Remove this 'public' modifier.(ˆªÜÆÿÿÿÿÿ
+5
+java:S5786ê"Remove this 'public' modifier.(‚•“
+5
+java:S5786ş"Remove this 'public' modifier.(ìµÊ
+5
+java:S5786•"Remove this 'public' modifier.(€Ğ‡ı
+:
+java:S5786¤"Remove this 'public' modifier.(²ö§œüÿÿÿÿ
+@
+java:S2925
+"$Remove this use of "Thread.sleep()".(»ãßºøÿÿÿÿ
+;
+java:S2925¦"$Remove this use of "Thread.sleep()".(­²ÙÍ
+C
+java:S2699I"-Add at least one assertion to this test case.(™øËÈ
+D
+java:S2699ª"-Add at least one assertion to this test case.(‡æÜÓ
+I
+java:S2699³"-Add at least one assertion to this test case.(‡úÕˆùÿÿÿÿ
+I
+java:S2699Ó"-Add at least one assertion to this test case.(²İ•Øúÿÿÿÿ
+I
+java:S2699å"-Add at least one assertion to this test case.(¡™¼÷ıÿÿÿÿ
+I
+java:S2699ı"-Add at least one assertion to this test case.(×ş´Àıÿÿÿÿ
+I
+java:S2699¢"-Add at least one assertion to this test case.(…§Ò†üÿÿÿÿ
+I
+java:S2699«"-Add at least one assertion to this test case.(àÆÒıÿÿÿÿ
+D
+java:S2699à"-Add at least one assertion to this test case.(–šì×
+D
+java:S2699ñ"-Add at least one assertion to this test case.(¢‘„Ç
+I
+java:S2699ü"-Add at least one assertion to this test case.(”Øƒ˜ûÿÿÿÿ
+I
+java:S2699ˆ"-Add at least one assertion to this test case.(êğŞ¿ûÿÿÿÿ
+D
+java:S2699’"-Add at least one assertion to this test case.(€‹ñ´
+D
+java:S2699¦"-Add at least one assertion to this test case.(ùÑµŞ
+I
+java:S2699³"-Add at least one assertion to this test case.(ö•ışÿÿÿÿ
+I
+java:S2699¾"-Add at least one assertion to this test case.(¨³Ú÷úÿÿÿÿ
+I
+java:S2699Ö"-Add at least one assertion to this test case.(ôú·œÿÿÿÿÿ
+D
+java:S2699î"-Add at least one assertion to this test case.(¹®Ä
+C
+java:S2699¿"-Add at least one assertion to this test case.(¿ú²@
+I
+java:S2699Ş"-Add at least one assertion to this test case.(æ„àÙÿÿÿÿÿ
+I
+java:S2699ë"-Add at least one assertion to this test case.(—ù«“úÿÿÿÿ
+D
+java:S2699ö"-Add at least one assertion to this test case.(’ëöé
+I
+java:S2699ƒ"-Add at least one assertion to this test case.(ÕÔõ€úÿÿÿÿ
+D
+java:S2699“"-Add at least one assertion to this test case.(ôàÑ
+D
+java:S2699 "-Add at least one assertion to this test case.(üÿş
+D
+java:S2699á"-Add at least one assertion to this test case.(¢™’¨
+D
+java:S2699ø"-Add at least one assertion to this test case.(ßÔ¯É
+C
+java:S2699•"-Add at least one assertion to this test case.(—‘T
+D
+java:S2699¿"-Add at least one assertion to this test case.(‡Œ¨–
+I
+java:S2699Ì"-Add at least one assertion to this test case.(á¯›’ıÿÿÿÿ
+I
+java:S2699à"-Add at least one assertion to this test case.(ˆÖşÃÿÿÿÿÿ
+I
+java:S2699î"-Add at least one assertion to this test case.(Õê­ëøÿÿÿÿ
+I
+java:S2699ú"-Add at least one assertion to this test case.(Š–Œúÿÿÿÿ
+D
+java:S2699€"-Add at least one assertion to this test case.(ºê‚å
+I
+java:S2699‹"-Add at least one assertion to this test case.(’¶Öşüÿÿÿÿ
+I
+java:S2699²"-Add at least one assertion to this test case.(àª´àıÿÿÿÿ
+D
+java:S2699¹"-Add at least one assertion to this test case.(íçšÊ
+D
+java:S2699Á"-Add at least one assertion to this test case.(â½¨í
+D
+java:S2699É"-Add at least one assertion to this test case.(âûì¨
+D
+java:S2699Î"-Add at least one assertion to this test case.(°“’Ç
+I
+java:S2699Ø"-Add at least one assertion to this test case.(“å£ïûÿÿÿÿ
+D
+java:S2699õ"-Add at least one assertion to this test case.(©¿Æ‚
+I
+java:S2699œ"-Add at least one assertion to this test case.(„¡’Ùşÿÿÿÿ
+I
+java:S2699£"-Add at least one assertion to this test case.(ú•…Ãşÿÿÿÿ
+I
+java:S2699¸"-Add at least one assertion to this test case.(’â·Óùÿÿÿÿ
+I
+java:S2699À"-Add at least one assertion to this test case.(Ã–ôúÿÿÿÿ
+D
+java:S2699Ê"-Add at least one assertion to this test case.(¨Ø½Ü
+I
+java:S2699ƒ	"-Add at least one assertion to this test case.(Ş³†‚øÿÿÿÿ
+I
+java:S2699	"-Add at least one assertion to this test case.(Ëİğôøÿÿÿÿ
+I
+java:S2699—	"-Add at least one assertion to this test case.(„ôüûÿÿÿÿ
+D
+java:S2699ª	"-Add at least one assertion to this test case.(Æ¯Úˆ
+I
+java:S2699»	"-Add at least one assertion to this test case.(›“²Æúÿÿÿÿ
+D
+java:S2699È	"-Add at least one assertion to this test case.(°é½§
+I
+java:S2699ß	"-Add at least one assertion to this test case.(Ã¤•„şÿÿÿÿ
+I
+java:S2699ô	"-Add at least one assertion to this test case.(ğŞ­îşÿÿÿÿ
+D
+java:S2699Ÿ
+"-Add at least one assertion to this test case.(ìé¶Š
+I
+java:S2699¹
+"-Add at least one assertion to this test case.(Î¤¶òüÿÿÿÿ
+D
+java:S2699Ì
+"-Add at least one assertion to this test case.(Ñ«ü¶
+I
+java:S2699×
+"-Add at least one assertion to this test case.(Èã÷•şÿÿÿÿ
+D
+java:S2699İ
+"-Add at least one assertion to this test case.(¥Ù™¨
+I
+java:S2699æ
+"-Add at least one assertion to this test case.(ßÜÊúÿÿÿÿ
+I
+java:S2699ø
+"-Add at least one assertion to this test case.(ğªëŸùÿÿÿÿ
+I
+java:S2699…"-Add at least one assertion to this test case.(õåÛıÿÿÿÿ
+D
+java:S2699³"-Add at least one assertion to this test case.(Ğ£¸
+D
+java:S2699»"-Add at least one assertion to this test case.(ùáƒŸ
+I
+java:S2699Ï"-Add at least one assertion to this test case.(ˆªÜÆÿÿÿÿÿ
+D
+java:S2699ê"-Add at least one assertion to this test case.(‚•“
+D
+java:S2699ş"-Add at least one assertion to this test case.(ìµÊ
+D
+java:S2699•"-Add at least one assertion to this test case.(€Ğ‡ı
+I
+java:S2699¤"-Add at least one assertion to this test case.(²ö§œüÿÿÿÿ

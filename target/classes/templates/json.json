@@ -1,0 +1,60 @@
+{
+  "_id" : "626277418afbbd52de734ed4",
+  "category" : "underwriting1",
+  "createTime" : 1650620225693,
+  "executionId" : "c59e8e93-c21f-11ec-b1de-00ff17db83a2",
+  "id" : "c59f2ad7-c21f-11ec-b1de-00ff17db83a2",
+  "identityLinks" : [
+    {
+      "processInstanceId" : "c59d07e4-c21f-11ec-b1de-00ff17db83a2",
+      "persistentState" : {
+        "processInstanceId" : "c59d07e4-c21f-11ec-b1de-00ff17db83a2",
+        "type" : "starter",
+        "userId" : "117"
+      },
+      "id" : "c59d07e5-c21f-11ec-b1de-00ff17db83a2",
+      "type" : "starter",
+      "user" : true,
+      "userId" : "117",
+      "group" : false
+    },
+    {
+      "groupId" : "114",
+      "persistentState" : {
+        "groupId" : "114",
+        "type" : "candidate",
+        "taskId" : "c59f2ad7-c21f-11ec-b1de-00ff17db83a2"
+      },
+      "id" : "c59f51e8-c21f-11ec-b1de-00ff17db83a2",
+      "type" : "candidate",
+      "user" : false,
+      "taskId" : "c59f2ad7-c21f-11ec-b1de-00ff17db83a2",
+      "group" : true
+    }
+  ],
+  "name" : "核保",
+  "priority" : 50,
+  "processDefinitionId" : "flow249underwriting:4:b736f687-c21f-11ec-931a-c2d4040d2bca",
+  "processInstanceId" : "c59d07e4-c21f-11ec-b1de-00ff17db83a2",
+  "processVariables" : {
+    "departmentName" : "邯郸分公司",
+    "applyType" : "insure",
+    "productLabel" : "炸鸡排",
+    "riskLabel" : "炸鸡险",
+    "productVersion" : "220411151829023",
+    "submitTime" : "2022-04-22 17:37:05",
+    "productId" : "97",
+    "applicationNo" : "30448567066477220561314333247",
+    "insuranceName" : "shiyue1735",
+    "workModuleId" : "629",
+    "taskSubmiterId" : "117",
+    "taskSubmiter" : "钟凤英"
+  },
+  "taskDefinitionKey" : "flow1",
+  "taskId" : "c59f2ad7-c21f-11ec-b1de-00ff17db83a2",
+  "taskLocalVariables" : {
+    
+    
+  },
+  "tenantId" : ""
+}

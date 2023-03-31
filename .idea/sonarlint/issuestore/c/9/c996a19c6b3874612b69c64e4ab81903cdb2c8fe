@@ -1,0 +1,16 @@
+
+cWeb:DoctypePresenceCheck":Insert a <!DOCTYPE> declaration to before this <html> tag.(œ÷Ãûÿÿÿÿ
+Z	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
+IWeb:TableWithoutCaptionCheckï" Add a description to this table.(ºÉÁ‹
+;	Web:S5256ï"%Add "<th>" headers to this "<table>".(ºÉÁ‹
+?	Web:S1827ï")Remove this deprecated "align" attribute.(ºÉÁ‹
+E	Web:S1827ï"/Remove this deprecated "cellspacing" attribute.(ºÉÁ‹
+IWeb:TableWithoutCaptionCheckı" Add a description to this table.(Ã˜€Ê
+;	Web:S5256ı"%Add "<th>" headers to this "<table>".(Ã˜€Ê
+IWeb:TableWithoutCaptionCheck‡" Add a description to this table.(Ã˜€Ê
+;	Web:S5256‡"%Add "<th>" headers to this "<table>".(Ã˜€Ê
+IWeb:TableWithoutCaptionCheck°" Add a description to this table.(Ş‹šş
+g Web:TableHeaderHasIdOrScopeCheck³";Add either an 'id' or a 'scope' attribute to this <th> tag.(­ÿıu
+m Web:TableHeaderHasIdOrScopeCheck´";Add either an 'id' or a 'scope' attribute to this <th> tag.(û´ÁÌıÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheckµ";Add either an 'id' or a 'scope' attribute to this <th> tag.(ø¬äÔûÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheck¶";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ò“Šéùÿÿÿÿ
